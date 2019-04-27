@@ -31,10 +31,12 @@ summary(mtcars)
 
 Saat berkerja dengan dokumen R Markdown, Anda juga dapat menjalankan kode R yang Anda tuliskan dalam *chunk*. Anda dapat menggunakan pemintas **Ctrl + Enter** untuk menjalankan satu baris kode R atau **Ctrl + Shift + Enter** untuk menjalankan semua kode R dalam sebuah *chunk*. Sekarang buatlah *chunk* baru dengan nama 'plot-volcano' dengan menggunakan baris kode R di bawah ini! Kemudian jalankanlah baris kode R dalam *chunk* yang telah Anda buat tersebut dengan menggunakan pemintas **Ctrl + Shift + Enter**!
 
+```{r}
 filled.contour(volcano,
                color.palette = terrain.colors, 
                plot.title = title("Topografi Gunung Maunga Whau"), 
                key.title = title("Tinggi\n(meter)"))
+```
 
 Setelah selesai membuat dokumen R Markdown yang berisikan teks beserta *chunk* berisi kode R, Anda dapat klik tombol **Knit** atau pemintas **Ctrl + Shift + K** untuk mengkonversi dokumen R Markdown menjadi dokumen final sesuai dengan format dokumen yang diinginkan. Dokumen final yang dihasilkan akan berisi teks, kode R, serta *output* dari kode R yang dituliskan. Dalam contoh ini format dokumen final keluaran R Markdown setelah menjalankan **Knit** adalah dokumen markdown (ekstensi .md). Anda dapat mengatur format dokumen final dengan cara mengubah baris *output* pada YAML metadata (lihat baris paling atas dokumen ini) seperti contoh berikut:
 
